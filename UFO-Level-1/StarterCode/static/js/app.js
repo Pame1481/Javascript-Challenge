@@ -1,11 +1,9 @@
-// YOUR CODE HERE!
 // from data.js
 
 var tableData = data;
 
 // LEVEL-1:
 
-// YOUR CODE HERE!
 var tbody = d3.select("tbody");
 
 function tablaNueva(tableData) {

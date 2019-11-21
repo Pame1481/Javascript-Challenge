@@ -1,7 +1,6 @@
 // from data.js
-var tableData = data;
 
-// YOUR CODE HERE!
+var tableData = data;
 
 // LEVEL-2:
 
