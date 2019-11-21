@@ -1,10 +1,14 @@
+// YOUR CODE HERE!
 // from data.js
+
 var tableData = data;
+
+// LEVEL-1:
 
 // YOUR CODE HERE!
 var tbody = d3.select("tbody");
 
-function newTable(tableData) {
+function tablaNueva(tableData) {
   tbody.html("");
   tableData.forEach((UFO) => {
     console.log(UFO);
@@ -16,25 +20,22 @@ function newTable(tableData) {
   });
 }
 
-newTable(tableData);
+tablaNueva(tableData);
 
 var button = d3.select("#filter-btn");
 
 button.on("click", function () {
   d3.event.preventDefault();
   var inputElement = d3.select("#datetime");
-  var inputValue = inputElement.property("value");
+  var inputDate = inputElement.property("value");
   
-  console.log(inputValue);
+  console.log(inputDate);
  
 
-  var filteredData = tableData.filter(date => date.datetime === inputValue);
+  var filteredData = tableData.filter(fecha => fecha.datetime === inputDate);
 
   console.log(filteredData);
   
-  newTable(filteredData);
+  tablaNueva(filteredData);
 
 });
-
-
-  
